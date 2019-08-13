@@ -1,12 +1,11 @@
 {
     "name":              "secretary/psr-6-cache-adapter",
-    "description":       "PSR-6 Cache Adapter for Secretary",
+    "description":       "Chain Adapter for Secretary",
     "type":              "library",
     "license":           "MIT",
     "keywords":          [
         "secrets",
-        "cache",
-        "psr-6",
+        "chain",
         "secretary"
     ],
     "authors":           [
@@ -18,7 +17,6 @@
     "minimum-stability": "stable",
     "require":           {
         "php":            "^7.2.0",
-        "psr/cache":      "^1.0",
         "secretary/core": "self.version"
     },
     "require-dev":       {
@@ -27,12 +25,12 @@
     },
     "autoload":          {
         "psr-4": {
-            "Secretary\\Adapter\\Cache\\PSR6Cache\\": ""
+            "Secretary\\Adapter\\Chain\\": ""
         }
     },
     "autoload-dev":      {
         "psr-4": {
-            "Secretary\\Adapter\\Cache\\PSR6Cache\\Tests\\": "Tests/"
+            "Secretary\\Adapter\\Chain\\Tests\\": "Tests/"
         }
     }
 }
